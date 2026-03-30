@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+    background-image: url('https://via.placeholder.com/1920x1080?text=PNG+Resort+Background');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* add background to main sections for contrast */
+main {
+    padding: 2em;
+    background-color: #ffffff;
+}
+header, footer {
+    background-color: #005f73;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav li {
+    display: inline;
+    margin: 0 1em;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+main {
+    padding: 2em;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+form label {
+    margin-top: 0.5em;
+}
+form input, form textarea {
+    padding: 0.5em;
+    margin-top: 0.2em;
+}
+form button {
+    margin-top: 1em;
+    padding: 0.7em;
+    background-color: #0a9396;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Resort grid & card styling */
+.resort-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+article.resort-card {
+    border: 3px solid #0a9396;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    margin: 1rem 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 340px;
+    box-sizing: border-box;
+}
+
+article.resort-card img {
+    display: block;
+    margin: 0 auto 1rem;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+}
+
+article.resort-card h3 {
+    border: 3px solid #005f73;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    background-color: rgba(255, 255, 255, 0.95);
+    display: inline-block;
+}
+
+/* Gallery styling */
+.gallery-grid {
+    column-count: 3;
+    column-gap: 1em;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+    display: block;
+    border-radius: 0.5em;
+}
+
+/* Responsive gallery */
+@media (max-width: 768px) {
+    .gallery-grid {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        column-count: 1;
+    }
+}
